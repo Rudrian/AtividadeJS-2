@@ -1,21 +1,10 @@
-function azul() {
-    document.body.classList.remove('azul', 'vermelho', 'verde');
-    document.body.classList.add('azul');
-}
+function criaObjeto(){
+    const azul = document.createElement('div');
+    azul.classList.add('azul');
+    document.body.appendChild(azul);
 
-function vermelho() {
-    document.body.classList.remove('azul', 'vermelho', 'verde');
-    document.body.classList.add('vermelho');
+    const vermelho = document.createElement('div');
+    vermelho.classList.add('vermelho');
+    azul.appendChild(vermelho);
 
-}
-
-function verde() {
-    document.body.classList.remove('azul', 'vermelho', 'verde');
-    document.body.classList.add('verde');
-
-}
-
-function mudaCor(cor) {
-    document.body.classList.remove('azul', 'vermelho', 'verde');
-    document.body.classList.add(cor);
 }
